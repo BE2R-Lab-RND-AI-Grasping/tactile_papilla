@@ -1,0 +1,304 @@
+{
+  "timestamp": "2026-01-28T01:51:28.201306",
+  "hypotheses_tested": [
+    "Компромисс регрессия-локализация (Парето-фронт)",
+    "Влияние жесткости/диаметра на характеристики",
+    "Ошибка центроиды при потере маркеров"
+  ],
+  "results": {
+    "tradeoff_analysis": {
+      "data": [
+        {
+          "sensor_type": "A",
+          "taxel_count": 12,
+          "diameter": 8.69,
+          "r2": 0.999,
+          "rmse": 0.1,
+          "snr_db": 30.0,
+          "localization_index": 2.5,
+          "center_precision": 0.1,
+          "geometry_name": "12 такселей"
+        },
+        {
+          "sensor_type": "B",
+          "taxel_count": 15,
+          "diameter": 6.94,
+          "r2": 0.9975,
+          "rmse": 0.13,
+          "snr_db": 28.5,
+          "localization_index": 2.26,
+          "center_precision": 0.094,
+          "geometry_name": "15 такселей"
+        },
+        {
+          "sensor_type": "C",
+          "taxel_count": 20,
+          "diameter": 6.47,
+          "r2": 0.995,
+          "rmse": 0.18,
+          "snr_db": 26.0,
+          "localization_index": 1.8599999999999999,
+          "center_precision": 0.084,
+          "geometry_name": "20 такселей"
+        },
+        {
+          "sensor_type": "D",
+          "taxel_count": 24,
+          "diameter": 5.75,
+          "r2": 0.993,
+          "rmse": 0.22,
+          "snr_db": 24.0,
+          "localization_index": 1.54,
+          "center_precision": 0.07600000000000001,
+          "geometry_name": "24 такселей"
+        },
+        {
+          "sensor_type": "E",
+          "taxel_count": 30,
+          "diameter": 5.14,
+          "r2": 0.99,
+          "rmse": 0.28,
+          "snr_db": 21.0,
+          "localization_index": 1.06,
+          "center_precision": 0.064,
+          "geometry_name": "30 такселей"
+        }
+      ],
+      "correlations": {
+        "taxel_count_vs_r2": -1.0,
+        "taxel_count_vs_localization_index": -1.0,
+        "diameter_vs_r2": 0.9383594341500885,
+        "diameter_vs_localization_index": 0.9383594341500905,
+        "r2_vs_localization_index": 0.9999999999999998,
+        "snr_db_vs_localization_index": 1.0
+      },
+      "df_stats": {
+        "n_rows": 5,
+        "columns": [
+          "sensor_type",
+          "taxel_count",
+          "diameter",
+          "r2",
+          "rmse",
+          "snr_db",
+          "localization_index",
+          "center_precision",
+          "geometry_name"
+        ]
+      }
+    },
+    "marker_loss_analysis": {
+      "A": {
+        "taxel_count": 12,
+        "diameter": 8.69,
+        "loss_errors": {
+          "0.1": {
+            "mean_error": 0.010832655479812842,
+            "std_error": 0.005713398098684533,
+            "n_simulations": 5000
+          },
+          "0.2": {
+            "mean_error": 0.016167083686140508,
+            "std_error": 0.008203317969181126,
+            "n_simulations": 5000
+          },
+          "0.3": {
+            "mean_error": 0.021008371219472438,
+            "std_error": 0.010832079277409461,
+            "n_simulations": 5000
+          },
+          "0.4": {
+            "mean_error": 0.02544361343875529,
+            "std_error": 0.013223168659908585,
+            "n_simulations": 5000
+          }
+        }
+      },
+      "B": {
+        "taxel_count": 15,
+        "diameter": 6.94,
+        "loss_errors": {
+          "0.1": {
+            "mean_error": 0.008464463112239124,
+            "std_error": 0.004584213832053162,
+            "n_simulations": 5000
+          },
+          "0.2": {
+            "mean_error": 0.015990185642328014,
+            "std_error": 0.00830470175782549,
+            "n_simulations": 5000
+          },
+          "0.3": {
+            "mean_error": 0.019419586308110928,
+            "std_error": 0.00999424026880026,
+            "n_simulations": 5000
+          },
+          "0.4": {
+            "mean_error": 0.026224029482685755,
+            "std_error": 0.013586135230920154,
+            "n_simulations": 5000
+          }
+        }
+      },
+      "C": {
+        "taxel_count": 20,
+        "diameter": 6.47,
+        "loss_errors": {
+          "0.1": {
+            "mean_error": 0.009477343140505088,
+            "std_error": 0.004940744996599519,
+            "n_simulations": 5000
+          },
+          "0.2": {
+            "mean_error": 0.0142783474799072,
+            "std_error": 0.007396525926200473,
+            "n_simulations": 5000
+          },
+          "0.3": {
+            "mean_error": 0.018631001569813694,
+            "std_error": 0.009572348926384028,
+            "n_simulations": 5000
+          },
+          "0.4": {
+            "mean_error": 0.02314437347114183,
+            "std_error": 0.012096719433421192,
+            "n_simulations": 5000
+          }
+        }
+      },
+      "D": {
+        "taxel_count": 24,
+        "diameter": 5.75,
+        "loss_errors": {
+          "0.1": {
+            "mean_error": 0.007986906025156608,
+            "std_error": 0.004140877562086387,
+            "n_simulations": 5000
+          },
+          "0.2": {
+            "mean_error": 0.011810391381774506,
+            "std_error": 0.006126055170391533,
+            "n_simulations": 5000
+          },
+          "0.3": {
+            "mean_error": 0.016736071849567387,
+            "std_error": 0.008663381095316737,
+            "n_simulations": 5000
+          },
+          "0.4": {
+            "mean_error": 0.020465903912469368,
+            "std_error": 0.010414656604520811,
+            "n_simulations": 5000
+          }
+        }
+      },
+      "E": {
+        "taxel_count": 30,
+        "diameter": 5.14,
+        "loss_errors": {
+          "0.1": {
+            "mean_error": 0.007468745158314854,
+            "std_error": 0.0038520154148002175,
+            "n_simulations": 5000
+          },
+          "0.2": {
+            "mean_error": 0.01125422749284339,
+            "std_error": 0.005942886422057377,
+            "n_simulations": 5000
+          },
+          "0.3": {
+            "mean_error": 0.014920834644986468,
+            "std_error": 0.00774335839961649,
+            "n_simulations": 5000
+          },
+          "0.4": {
+            "mean_error": 0.018571283761292513,
+            "std_error": 0.009664671803142118,
+            "n_simulations": 5000
+          }
+        }
+      }
+    },
+    "stiffness_analysis": {
+      "data": [
+        {
+          "sensor_type": "A",
+          "taxel_count": 12,
+          "diameter": 8.69,
+          "effective_stiffness": 81.53095774689,
+          "mean_deformation": 0.12397425478774911,
+          "mean_force": 10.107739728802148,
+          "snr_db": 30.0,
+          "noise_std": 0.05,
+          "r2": 0.999,
+          "rmse": 0.1,
+          "localization_index": 2.5,
+          "geometry_name": "12 такселей"
+        },
+        {
+          "sensor_type": "B",
+          "taxel_count": 15,
+          "diameter": 6.94,
+          "effective_stiffness": 75.08149873168506,
+          "mean_deformation": 0.12257950666761536,
+          "mean_force": 9.203453074395142,
+          "snr_db": 28.5,
+          "noise_std": 0.056,
+          "r2": 0.9975,
+          "rmse": 0.13,
+          "localization_index": 2.26,
+          "geometry_name": "15 такселей"
+        },
+        {
+          "sensor_type": "C",
+          "taxel_count": 20,
+          "diameter": 6.47,
+          "effective_stiffness": 76.74987387492538,
+          "mean_deformation": 0.12624363279585607,
+          "mean_force": 9.689182894594348,
+          "snr_db": 26.0,
+          "noise_std": 0.066,
+          "r2": 0.995,
+          "rmse": 0.18,
+          "localization_index": 1.8599999999999999,
+          "geometry_name": "20 такселей"
+        },
+        {
+          "sensor_type": "D",
+          "taxel_count": 24,
+          "diameter": 5.75,
+          "effective_stiffness": 81.62494055231517,
+          "mean_deformation": 0.1289053117639454,
+          "mean_force": 10.521888409609696,
+          "snr_db": 24.0,
+          "noise_std": 0.07400000000000001,
+          "r2": 0.993,
+          "rmse": 0.22,
+          "localization_index": 1.54,
+          "geometry_name": "24 такселей"
+        },
+        {
+          "sensor_type": "E",
+          "taxel_count": 30,
+          "diameter": 5.14,
+          "effective_stiffness": 80.64382846627888,
+          "mean_deformation": 0.1242159090575311,
+          "mean_force": 10.017246462818434,
+          "snr_db": 21.0,
+          "noise_std": 0.08600000000000001,
+          "r2": 0.99,
+          "rmse": 0.28,
+          "localization_index": 1.06,
+          "geometry_name": "30 такселей"
+        }
+      ],
+      "correlations": {
+        "stiffness_vs_r2": -0.3032125558142169,
+        "stiffness_vs_rmse": 0.3032125558142126,
+        "stiffness_vs_snr_db": -0.3032125558142126,
+        "stiffness_vs_noise_std": 0.30321255581421275,
+        "stiffness_vs_localization_index": -0.3032125558142124
+      }
+    }
+  }
+}
